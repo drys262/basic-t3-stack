@@ -8,9 +8,9 @@ export const exampleRouter = createRouter()
         text: z.string().nullish(),
       })
       .nullish(),
-    resolve({ input }) {
+    async resolve({ input }) {
       return {
-        greeting: `Hello ${input?.text ?? "world"}`,
+        greeting: `Hello111 ${input?.text ?? "world"}`,
       };
     },
   })
